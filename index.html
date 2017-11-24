@@ -1090,21 +1090,7 @@
                     </div>
                     <div id="success"></div>
                     <button type="submit" name="send" class="btn btn-default">Send Message</button>
-<?php
-                                                if (isset($_POST['send'])) {
-                                                $to = 'amiragize@yahoo'; // Use your own email address
-                                                $subject = 'Feedback Form Message';
-                                                $message = 'From: ' . $_POST['name'] . "\r\n\r\n";
-                                                $message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
-                                                $message .= 'Message: ' . $_POST['message'];
 
-                                                if($_POST['name']=="" || $_POST['email']=="" || $_POST['message']=="" ){}
-
-                                                else{
-                                                $success = mail($to, $subject, $message);
-                                                }
-                                                }
-                                                ?>
                 </form>
 
                 <div class="social wow fadeInDown" data-wow-delay="800ms">
